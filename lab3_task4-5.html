@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>(4-5)</title>
+		<script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+		<style>
+			body {
+				margin: 0;
+				background: #222B2A;
+			}
+			
+			h1{
+				margin-top: -10px;
+				color: #fff;
+				font-family: Geneva, Arial, Helvetica, sans-serif;
+
+			}
+
+			#h2_1{
+				color: #fff;
+				font-size: 20px;
+				margin-left: 7px;
+				margin-bottom: -30px;
+				font-family: Geneva, Arial, Helvetica, sans-serif;
+			}
+
+			#h2_2{
+				position: fixed;
+				margin-left: 400px;
+				margin-top: 5px;
+				color: #fff;
+				font-size: 20px;
+				font-family: Geneva, Arial, Helvetica, sans-serif;	
+			}
+
+			#inp_name {
+				margin-top: 35px;	
+				display: block;
+				padding: 0 20px;
+				background: #E9EFF6;
+				line-height: 40px;
+				border-width: 0;
+				border-radius: 10px;
+				border: 2px solid #222B2A;
+				width: 250px;
+			}
+			
+			#button_name {
+				margin-top: 10px;
+				width: 295px;
+				height: 30px;
+				border-radius: 10px;
+				font-family: Geneva, Arial, Helvetica sans-serif;
+				font-size: 13px;
+				text-align: center;
+				color: #E9EFF6;
+				background: #DA3D24;
+				transition: .3s;
+				border: 2px solid #222B2A;
+			}
+
+			#button_name:hover{
+				background: #222B2A;
+				color: #fff;
+				border: 2px solid #fff;
+			}
+
+			#inp_surname {
+				margin-top: 35px;
+				display: block;
+				padding: 0 20px;
+				background: #E9EFF6;
+				line-height: 40px;
+				border-radius: 10px;
+				border: 2px solid #222B2A;
+				width: 250px;
+			}
+
+			#button_surname {
+				margin-top: 10px;
+				width: 295px;
+				height: 30px;
+				border-radius: 10px;
+				font-size: 13px;
+				text-align: center;
+				color: #E9EFF6;
+				background: #DA3D24;
+				transition: .3s;
+				border: 2px solid #222B2A;
+			}
+
+			#button_surname:hover{
+				background: #222B2A;
+				color: #fff;
+				border: 2px solid #fff;
+			}
+
+			#inp_age {
+				position: fixed;
+				margin-top: -215px;
+				margin-left: 400px;
+				display: block;
+				padding: 0 20px;
+				line-height: 40px;
+				border-width: 0;
+				border-radius: 10px;
+				border: 2px solid #222B2A;
+				width: 250px;
+			}
+
+			#button_age {
+				margin-top: -120px;
+				position: fixed;
+				width: 295px;
+				height: 30px;
+				border-radius: 10px;
+				margin-left: 105px;
+				font-size: 13px;
+				text-align: center;
+				color: #E9EFF6;
+				background: #DA3D24;
+				transition: .3s;
+				border: 2px solid #222B2A;
+			}
+
+			#button_age:hover{
+				background: #222B2A;
+				color: #fff;
+				border: 2px solid #fff;
+				
+			}
+
+			#inp_course{
+				margin-top: -86px;
+				position: fixed;
+				display: block;
+				padding: 0 20px;
+				background: #E9EFF6;
+				line-height: 40px;
+				border-width: 0;
+				border-radius: 10px;
+				margin-left: 400px;
+				border: 2px solid #222B2A;
+				width: 250px;
+			}
+
+			#button_course {
+				text-transform: uppercase;
+				margin-top: 10px;
+				position: fixed;
+				width: 295px;
+				height:30px;
+				border-radius: 10px;
+				margin-left: 105px;
+				font-size: 13px;
+				text-align: center;
+				color: #E9EFF6;
+				background: #282923;
+				transition: .3s;
+				background: #DA3D24;
+				transition: .3s;
+				border: 2px solid #222B2A;
+			}
+
+			#button_course:hover{
+				background: #222B2A;
+				color: #fff;
+				border: 2px solid #fff;
+			}
+
+			#info {	
+				text-transform: uppercase;
+				margin-top: -100px;
+				position: fixed;
+				width: 295px;
+				height: 55px;
+				border-radius: 10px;
+				margin-left: 570px;
+				font-size: 13px;
+				text-align: center;
+				color: #E9EFF6;
+				transition: .3s;
+				background: #DA3D24;
+				border: 3px solid #222B2A;
+			}
+
+			#info:hover {
+				background: #222B2A;
+				color: #fff;
+				border: 3px solid #fff;
+			}
+
+			.task4 {
+				background-color: #DA3D24;
+				width: 1300px;
+				height: 300px;
+				padding:20px;
+				margin-top: 30px;
+				margin-left: 100px;
+				border-radius: 20px;
+				border: 2px solid #fff;
+			}
+
+			.task5{
+				width: 1340px;
+				height: 300px;
+				background-color: #DA3D24;
+				margin-top: 20px;
+				margin-left: 100px;
+				border-radius: 20px;
+				border: 2px solid #fff;
+			}
+
+			#fib_button{
+				text-transform: uppercase;
+				position: fixed;
+				margin-top: 40px;
+				margin-left: 24%;
+				width: 600px;
+				height: 150px;
+				font-size: 25px;
+				text-align: center;
+				color: #E9EFF6;
+				background: #DA3D24;
+				border-radius: 10px;
+				border: 3px solid #222B2A;
+				transition: .3s;
+			}
+
+			#fib_button:hover{
+				background: #222B2A;
+				color: #fff;
+				border: 3px solid #fff;
+				font-size: 28px;
+			}
+			
+			#H_1{
+				margin-top: 20px;
+			}
+			
+
+		</style>
+	</head>
+	<body >
+		<div class="task4">
+			<h1  align="center">Завдання №4</h1>	
+			<h2 id="h2_1">Ім'я:</h2> <h2 id="h2_2">Кількість років:</h2>
+			<input id="inp_name" type="text">
+			<button id="button_name">Підтвердити</button>
+			<h2 id="h2_1">Прізвище:</h2> <h2 id="h2_2">Курс:</h2>
+			<input id="inp_surname" type="text">
+			<button id="button_surname">Підтвердити</button>
+			<input id="inp_age" type="number">
+			<button id="button_age">Підтвердити</button>
+			<input id="inp_course" type="number" >
+			<button id="button_course">Підтвердити</button>
+			<button id="info">Теперішня інформація</button>
+		</div>
+
+		<div class="task5">
+			<h1 align="center" id="H_1">Завдання №5	</h1>
+		 	<button id="fib_button">вивести перші 20 чисел фібоначі</button>
+		</div>
+
+		<script type="text/javascript" src="JS/lb3_task4-5.js"></script>
+
+	</body>
+</html>

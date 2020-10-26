@@ -1,0 +1,53 @@
+<!--1-2 задание-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "form_style.css">
+	<title>РЕЄСТРАЦІЯ</title>
+</head>
+<body>
+
+	<div class="up_title">
+		<h1 id="reg_title">РЕЄСТРАЦІЯ</h1>
+	</div>
+	
+<form onsubmit="return chk();" method="post" >
+	<div class="main">
+		<div class="inp">
+
+			<input id="pib_input" type="text" placeholder="Прізвище Ім'я по Батькові" required>
+
+			<input id="group_input" type="text" placeholder="Група" required>
+
+			<input id="yob_input" type="number" placeholder="Рік народження:" required min="1960" max="2004" >
+
+			<input id="email_input" placeholder="E-mail" required>
+
+				<div id="dialog">
+					<div class="window">
+						<h1>Довідка правильного заповнювання форми:</h1>
+						<a class="close_button" href="#">&times;</a>
+						<div class="text">
+							<h2>Прізвище Ім'я по Батькові записувати українською мовою. </br> 
+							Рік народження заповнювати в діапозоні 1960-2004 років. </br>
+							Номер групи заповнювати згідно вашої реальної групи. </br>
+							E-mail вказувати реальний, через який ви будете отримувати інформацію.
+							 </h2>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<a align="center" id="dialog_button" href="#dialog">Примітка</a>
+
+	<div class="reg_button">
+		<input id="ret_but" type="submit" value="ЗАРЕЄСТРУВАТИСЯ">
+	</div>
+
+</form>
+	<script type="text/javascript" src="JS/js_task.js"></script>
+</body>
+</html>
