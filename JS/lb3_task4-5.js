@@ -1,3 +1,4 @@
+	//4 task
 	jQuery('document').ready(function() {
 
 	var Student = new Object();
@@ -31,7 +32,7 @@
 		}
 	});
 
-	jQuery('#button_sur').on('click', function ChangeSurname() {
+	jQuery('#button_surname').on('click', function ChangeSurname() {
 		if( jQuery('#inp_surname').val() == '')
 		{
 			alert("Нічого не введено");
@@ -59,7 +60,7 @@
 		alert('Ім\'я: ' + Student.name + '\n' +'Прізвище: ' + Student.surname + '\n' + 'Кількість років: ' + Student.age + '\n' + 'Курс: ' + Student.course);
 	});		
 
-//task5
+//5 task
 	
 	jQuery('#fib_button').on('click', function fibonaci() {
 	function fib(n){
